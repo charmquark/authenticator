@@ -72,6 +72,7 @@ static const CGFloat OTPProgressRingLineWidth = 1.5;
     CGContextStrokeEllipseInRect(context, ringRect);
 
     CGFloat progress = (CGFloat)(fmod([NSDate date].timeIntervalSince1970, self.period) / self.period);
+    progress = 3/8.;
 
     CGContextSetStrokeColorWithColor(context, self.tintColor.CGColor);
     CGContextAddArc(context,
