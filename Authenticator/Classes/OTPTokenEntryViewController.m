@@ -245,6 +245,7 @@ typedef enum : NSUInteger {
         _issuerCell.textField.placeholder = @"Some Website";
         _issuerCell.textField.delegate = self;
         _issuerCell.textField.returnKeyType = UIReturnKeyNext;
+        _issuerCell.textField.text = @"Google";
     }
     return _issuerCell;
 }
@@ -260,6 +261,7 @@ typedef enum : NSUInteger {
         _accountNameCell.textField.autocorrectionType = UITextAutocorrectionTypeNo;
         _accountNameCell.textField.keyboardType = UIKeyboardTypeEmailAddress;
         _accountNameCell.textField.returnKeyType = UIReturnKeyNext;
+        _accountNameCell.textField.text = @"john.appleseed@gmail.com";
     }
     return _accountNameCell;
 }
@@ -274,6 +276,7 @@ typedef enum : NSUInteger {
         _secretKeyCell.textField.autocapitalizationType = UITextAutocapitalizationTypeNone;
         _secretKeyCell.textField.autocorrectionType = UITextAutocorrectionTypeNo;
         _secretKeyCell.textField.returnKeyType = UIReturnKeyDone;
+        _secretKeyCell.textField.text = @"JBSWY3DPEHPK6PX9";
     }
     return _secretKeyCell;
 }
