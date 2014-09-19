@@ -63,6 +63,8 @@ static NSString *const kOTPKeychainEntriesArray = @"OTPKeychainEntries";
 - (void)fetchTokensFromKeychain
 {
     self.mutableTokens = [NSMutableArray array];
+
+    /*
     // Fetch tokens in the order they were saved in User Defaults
     NSArray *keychainReferences = [[NSUserDefaults standardUserDefaults] arrayForKey:kOTPKeychainEntriesArray];
     if (keychainReferences) {
@@ -76,6 +78,34 @@ static NSString *const kOTPKeychainEntriesArray = @"OTPKeychainEntries";
         // If lost tokens were found and appended, save the full list of tokens
         [self saveTokensToKeychain];
     }
+    */
+
+    OTPToken *A = [OTPToken tokenWithType:OTPTokenTypeTimer
+                                   secret:[@"A" dataUsingEncoding:NSASCIIStringEncoding]
+                                     name:@"john.appleseed@gmail.com"
+                                   issuer:@"Google"];
+    OTPToken *B = [OTPToken tokenWithType:OTPTokenTypeTimer
+                                   secret:[@"B" dataUsingEncoding:NSASCIIStringEncoding]
+                                     name:@"johnappleseed"
+                                   issuer:@"GitHub"];
+    OTPToken *C = [OTPToken tokenWithType:OTPTokenTypeTimer
+                                   secret:[@"C" dataUsingEncoding:NSASCIIStringEncoding]
+                                     name:nil
+                                   issuer:@"Dropbox"];
+    OTPToken *D = [OTPToken tokenWithType:OTPTokenTypeCounter
+                                   secret:[@"D" dataUsingEncoding:NSASCIIStringEncoding]
+                                     name:@"john@appleseed.com"
+                                   issuer:nil];
+    OTPToken *E = [OTPToken tokenWithType:OTPTokenTypeTimer
+                                   secret:[@"E" dataUsingEncoding:NSASCIIStringEncoding]
+                                     name:@"johnny.apple"
+                                   issuer:@"Facebook"];
+
+    [self.mutableTokens addObject:A];
+    [self.mutableTokens addObject:B];
+    [self.mutableTokens addObject:C];
+    [self.mutableTokens addObject:D];
+    [self.mutableTokens addObject:E];
 }
 
 - (BOOL)recoverLostTokens
