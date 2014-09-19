@@ -65,6 +65,11 @@
     [self.view.layer addSublayer:self.videoLayer];
     self.videoLayer.frame = self.view.layer.bounds;
 
+    UIImageView *QRCode = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    QRCode.contentMode = UIViewContentModeScaleAspectFill;
+    QRCode.image = [UIImage imageNamed:@"QRCode.jpg"];
+    [self.view addSubview:QRCode];
+
     OTPScannerOverlayView *overlayView = [[OTPScannerOverlayView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:overlayView];
 }
@@ -182,6 +187,7 @@
 
 + (BOOL)deviceCanScan
 {
+    return YES;
     return !![AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
 }
 

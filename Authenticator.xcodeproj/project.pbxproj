@@ -12,6 +12,7 @@
 		43B5E4365C6C4081AEF41717 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B03839CF35E4014987A36CA /* libPods.a */; };
 		8B0028B511EB75920092DE18 /* OTPScannerOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0028B411EB75920092DE18 /* OTPScannerOverlayView.m */; };
 		8BF23A7213D4EF7000F3FD82 /* UIColor+OTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF23A7113D4EF7000F3FD82 /* UIColor+OTP.m */; };
+		C949E1BE19CBE12100BADBA8 /* QRCode.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C949E1BD19CBE12100BADBA8 /* QRCode.jpg */; };
 		C9745D0B17DA5861008B6E23 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = C9745D0A17DA5861008B6E23 /* UIAlertView+Blocks.m */; };
 		C9777A021908064500B4A7F5 /* OTPTokenEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9777A011908064500B4A7F5 /* OTPTokenEditViewController.m */; };
 		C97B68C717D9226D005D1FE0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C97B68C617D9226D005D1FE0 /* Settings.bundle */; };
@@ -54,6 +55,7 @@
 		8BF23A7113D4EF7000F3FD82 /* UIColor+OTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OTP.m"; sourceTree = "<group>"; };
 		8BF5147F118799AE005C936F /* Authenticator-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Authenticator-Info.plist"; sourceTree = "<group>"; };
 		9B03839CF35E4014987A36CA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C949E1BD19CBE12100BADBA8 /* QRCode.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = QRCode.jpg; sourceTree = "<group>"; };
 		C959A63C190A69120042DEC0 /* Icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Icon.svg; sourceTree = "<group>"; };
 		C959A63E190A69E60042DEC0 /* GenerateIcons.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateIcons.sh; sourceTree = "<group>"; };
 		C9745D0917DA5861008B6E23 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C949E1BD19CBE12100BADBA8 /* QRCode.jpg */,
 				C9F75C921843CFFD00B6FA14 /* App Icon */,
 				C9C6CCA11842E331000100C2 /* Images.xcassets */,
 				C9BEAE5F19C67FD800533385 /* LaunchScreen.xib */,
@@ -360,6 +363,7 @@
 				C9BEAE6019C67FD800533385 /* LaunchScreen.xib in Resources */,
 				C9F75C961843D01500B6FA14 /* iTunesArtwork@2x in Resources */,
 				C9C6CCA21842E331000100C2 /* Images.xcassets in Resources */,
+				C949E1BE19CBE12100BADBA8 /* QRCode.jpg in Resources */,
 				C9F75C951843D01500B6FA14 /* iTunesArtwork in Resources */,
 				C97B68C717D9226D005D1FE0 /* Settings.bundle in Resources */,
 			);
