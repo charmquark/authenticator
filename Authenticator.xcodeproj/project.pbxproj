@@ -16,6 +16,7 @@
 		C944A5591A7ECB3100E08B1E /* Base32.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C944A5581A7ECB3100E08B1E /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C944A58B1A7F85FA00E08B1E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C944A5881A7F85FA00E08B1E /* SVProgressHUD.bundle */; };
 		C944A58C1A7F85FA00E08B1E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C944A58A1A7F85FA00E08B1E /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-Wno-conversion"; }; };
+		C944A58F1A7F87C000E08B1E /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = C944A58E1A7F87C000E08B1E /* SVIndefiniteAnimatedView.m */; settings = {COMPILER_FLAGS = "-Wno-conversion"; }; };
 		C9777A021908064500B4A7F5 /* OTPTokenEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9777A011908064500B4A7F5 /* OTPTokenEditViewController.m */; };
 		C97B68C717D9226D005D1FE0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C97B68C617D9226D005D1FE0 /* Settings.bundle */; };
 		C983AB74197F98FC00975003 /* OTPAuthenticatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C983AB73197F98FC00975003 /* OTPAuthenticatorTests.m */; };
@@ -85,6 +86,8 @@
 		C944A5881A7F85FA00E08B1E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		C944A5891A7F85FA00E08B1E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		C944A58A1A7F85FA00E08B1E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		C944A58D1A7F87C000E08B1E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		C944A58E1A7F87C000E08B1E /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		C959A63C190A69120042DEC0 /* Icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Icon.svg; sourceTree = "<group>"; };
 		C959A63E190A69E60042DEC0 /* GenerateIcons.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateIcons.sh; sourceTree = "<group>"; };
 		C9776E3318518801003D53CB /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 			children = (
 				C944A5891A7F85FA00E08B1E /* SVProgressHUD.h */,
 				C944A58A1A7F85FA00E08B1E /* SVProgressHUD.m */,
+				C944A58D1A7F87C000E08B1E /* SVIndefiniteAnimatedView.h */,
+				C944A58E1A7F87C000E08B1E /* SVIndefiniteAnimatedView.m */,
 				C944A5881A7F85FA00E08B1E /* SVProgressHUD.bundle */,
 			);
 			name = SVProgressHUD;
@@ -473,6 +478,7 @@
 				C9D6C8461906CD54004F0E08 /* OTPTextFieldCell.swift in Sources */,
 				C9F75C9C1843D31A00B6FA14 /* OTPTokenManager.m in Sources */,
 				C9D6C84C19075044004F0E08 /* OTPProgressRing.swift in Sources */,
+				C944A58F1A7F87C000E08B1E /* SVIndefiniteAnimatedView.m in Sources */,
 				C99069D1180CBAC900BAEF53 /* OTPScannerViewController.m in Sources */,
 				C9D6C83F1906BD68004F0E08 /* OTPSegmentedControlCell.swift in Sources */,
 				8B0028B511EB75920092DE18 /* OTPScannerOverlayView.swift in Sources */,
