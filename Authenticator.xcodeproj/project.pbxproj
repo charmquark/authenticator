@@ -380,7 +380,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = OTP;
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Matt Rubin";
 				TargetAttributes = {
 					C9906A2D1812522100BAEF53 = {
