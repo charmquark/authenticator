@@ -14,6 +14,8 @@
 		C944A5551A7ECA7700E08B1E /* OneTimePasswordLegacy.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C944A5541A7ECA7700E08B1E /* OneTimePasswordLegacy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C944A5571A7ECB0800E08B1E /* OneTimePassword.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C944A5561A7ECB0800E08B1E /* OneTimePassword.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C944A5591A7ECB3100E08B1E /* Base32.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = C944A5581A7ECB3100E08B1E /* Base32.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C944A58B1A7F85FA00E08B1E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C944A5881A7F85FA00E08B1E /* SVProgressHUD.bundle */; };
+		C944A58C1A7F85FA00E08B1E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C944A58A1A7F85FA00E08B1E /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-Wno-conversion"; }; };
 		C9777A021908064500B4A7F5 /* OTPTokenEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9777A011908064500B4A7F5 /* OTPTokenEditViewController.m */; };
 		C97B68C717D9226D005D1FE0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C97B68C617D9226D005D1FE0 /* Settings.bundle */; };
 		C983AB74197F98FC00975003 /* OTPAuthenticatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C983AB73197F98FC00975003 /* OTPAuthenticatorTests.m */; };
@@ -80,6 +82,9 @@
 		C944A57A1A7F772600E08B1E /* Mac-DynamicLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-DynamicLibrary.xcconfig"; sourceTree = "<group>"; };
 		C944A57B1A7F772600E08B1E /* Mac-Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-Framework.xcconfig"; sourceTree = "<group>"; };
 		C944A57C1A7F772600E08B1E /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Mac-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		C944A5881A7F85FA00E08B1E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		C944A5891A7F85FA00E08B1E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		C944A58A1A7F85FA00E08B1E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		C959A63C190A69120042DEC0 /* Icon.svg */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Icon.svg; sourceTree = "<group>"; };
 		C959A63E190A69E60042DEC0 /* GenerateIcons.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateIcons.sh; sourceTree = "<group>"; };
 		C9776E3318518801003D53CB /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -150,6 +155,7 @@
 			children = (
 				C97B68CB17D964D4005D1FE0 /* Authenticator */,
 				C9906A331812522100BAEF53 /* AuthenticatorTests */,
+				C944A5861A7F85FA00E08B1E /* SVProgressHUD */,
 				C98C1C4F17D2F16800A07D3F /* Config */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				C944A5661A7F772500E08B1E /* xcconfigs */,
@@ -231,6 +237,17 @@
 				C944A57C1A7F772600E08B1E /* Mac-StaticLibrary.xcconfig */,
 			);
 			path = "Mac OS X";
+			sourceTree = "<group>";
+		};
+		C944A5861A7F85FA00E08B1E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C944A5891A7F85FA00E08B1E /* SVProgressHUD.h */,
+				C944A58A1A7F85FA00E08B1E /* SVProgressHUD.m */,
+				C944A5881A7F85FA00E08B1E /* SVProgressHUD.bundle */,
+			);
+			name = SVProgressHUD;
+			path = Carthage/Checkouts/SVProgressHUD/SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		C9776E32185187E8003D53CB /* Docs */ = {
@@ -411,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9BEAE6019C67FD800533385 /* LaunchScreen.xib in Resources */,
+				C944A58B1A7F85FA00E08B1E /* SVProgressHUD.bundle in Resources */,
 				C9F75C961843D01500B6FA14 /* iTunesArtwork@2x in Resources */,
 				C9C6CCA21842E331000100C2 /* Images.xcassets in Resources */,
 				C9F75C951843D01500B6FA14 /* iTunesArtwork in Resources */,
@@ -459,6 +477,7 @@
 				C9D6C83F1906BD68004F0E08 /* OTPSegmentedControlCell.swift in Sources */,
 				8B0028B511EB75920092DE18 /* OTPScannerOverlayView.swift in Sources */,
 				C99069D4180E07A100BAEF53 /* OTPTokenEntryViewController.m in Sources */,
+				C944A58C1A7F85FA00E08B1E /* SVProgressHUD.m in Sources */,
 				C9ABDACF17DD3CF500A86AB5 /* OTPTokenCell.m in Sources */,
 				C92708AC19CFB0750033128B /* OTPTokenListViewController.swift in Sources */,
 				C9777A021908064500B4A7F5 /* OTPTokenEditViewController.m in Sources */,
